@@ -1,0 +1,11 @@
+Setup:
+======
+
+1) Install NodeJS>=10.0
+
+2) Clone the showdown repo: 
+
+git clone https://github.com/smogon/pokemon-showdown.git
+cd pokemon-showdown
+npm install
+cp config/config-example.js config/config.js
