@@ -5,7 +5,6 @@ import time
 
 from poke_env.player.player import Player
 from poke_env.player.random_player import RandomPlayer
-from poke_env.server_configuration import ShowdownServerConfiguration
 
 import time
 
