@@ -1,0 +1,59 @@
+PS C:\Users\Brian\Belajar Python\pokemon\mgai-pokemon\poke-env> & C:/Users/Brian/anaconda3/envs/poke/python.exe "c:/Users/Brian/Belajar Python/pokemon/mgai-pokemon/poke-env/examples/rl_with_new_open_ai_gym_wrapper.py"
+2022-05-18 22:11:43.217053: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-05-18 22:11:44.047452: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 2783 MB memory:  -> device: 0, name: NVIDIA GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1
+Training for 10000 steps ...
+Interval 1 (0 steps performed)
+C:\Users\Brian\anaconda3\envs\poke\lib\site-packages\keras\engine\training.py:2470: UserWarning: `Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+  warnings.warn('`Model.state_updates` will be removed in a future version. '
+10000/10000 [==============================] - 416s 42ms/step - reward: 0.9481  
+done, took 416.527 seconds
+Results against random player:
+DQN Evaluation: 96 victories out of 100 episodes
+Results against max base power player:
+DQN Evaluation: 72 victories out of 100 episodes
+2022-05-18 22:20:35,279 - SimpleRLPlayer 3 - WARNING - Unmanaged move message format received - cleaned up message ['', 'move', 'p2a: Cherrim', 'Healing Wish', '', '[still]'] in battle battle-gen8randombattle-1454 turn 32
+2022-05-18 22:20:35,281 - MaxBasePowerPlay 2 - WARNING - Unmanaged move message format received - cleaned up message ['', 'move', 'p2a: Cherrim', 'Healing Wish', '', '[still]'] in battle battle-gen8randombattle-1454 turn 32
+2022-05-18 22:20:35,293 - MaxBasePowerPlay 2 - WARNING - Unmanaged move message format received - cleaned up message ['', 'move', 'p2a: Cherrim', 'Healing Wish', '', '[still]'] in battle battle-gen8randombattle-1454 turn 33
+2022-05-18 22:20:35,294 - SimpleRLPlayer 3 - WARNING - Unmanaged move message format received - cleaned up message ['', 'move', 'p2a: Cherrim', 'Healing Wish', '', '[still]'] in battle battle-gen8randombattle-1454 turn 33
+2022-05-18 22:20:35,306 - SimpleRLPlayer 3 - WARNING - Unmanaged move message format received - cleaned up message ['', 'move', 'p2a: Cherrim', 'Healing Wish', '', '[still]'] in battle battle-gen8randombattle-1454 turn 34
+2022-05-18 22:20:35,307 - MaxBasePowerPlay 2 - WARNING - Unmanaged move message format received - cleaned up message ['', 'move', 'p2a: Cherrim', 'Healing Wish', '', '[still]'] in battle battle-gen8randombattle-1454 turn 34
+2022-05-18 22:20:35,318 - MaxBasePowerPlay 2 - WARNING - Unmanaged move message format received - cleaned up message ['', 'move', 'p2a: Cherrim', 'Healing Wish', '', '[still]'] in battle battle-gen8randombattle-1454 turn 35
+2022-05-18 22:20:35,320 - SimpleRLPlayer 3 - WARNING - Unmanaged move message format received - cleaned up message ['', 'move', 'p2a: Cherrim', 'Healing Wish', '', '[still]'] in battle battle-gen8randombattle-1454 turn 35
+2022-05-18 22:20:35,331 - MaxBasePowerPlay 2 - WARNING - Unmanaged move message format received - cleaned up message ['', 'move', 'p2a: Cherrim', 'Healing Wish', '', '[still]'] in battle battle-gen8randombattle-1454 turn 36
+2022-05-18 22:20:35,332 - SimpleRLPlayer 3 - WARNING - Unmanaged move message format received - cleaned up message ['', 'move', 'p2a: Cherrim', 'Healing Wish', '', '[still]'] in battle battle-gen8randombattle-1454 turn 36
+2022-05-18 22:20:35,342 - MaxBasePowerPlay 2 - WARNING - Unmanaged move message format received - cleaned up message ['', 'move', 'p2a: Cherrim', 'Healing Wish', '', '[still]'] in battle battle-gen8randombattle-1454 turn 37
+2022-05-18 22:20:35,344 - SimpleRLPlayer 3 - WARNING - Unmanaged move message format received - cleaned up message ['', 'move', 'p2a: Cherrim',Evaluation with included method: (18.93031171428572, (13.84813251829491, 27.156189569181436))
+Cross evaluation of DQN with baselines:
+------------------  ----------------  --------------  ------------------  ------------------
+-                   SimpleRLPlayer 3  RandomPlayer 5  MaxBasePowerPlay 3  SimpleHeuristics 2
+SimpleRLPlayer 3                      0.9             0.76                0.16
+RandomPlayer 5      0.1                               0.08                0.02
+MaxBasePowerPlay 3  0.24              0.92                                0.0
+SimpleHeuristics 2  0.84              0.98            1.0
+------------------  ----------------  --------------  ------------------  ------------------
+PS C:\Users\Brian\Belajar Python\pokemon\mgai-pokemon\poke-env>
+
+                                                              > & C:/Users/Brian/anaconda3/envs/poke/python.exe "C:\Users\Brian\Belajar Python\pokemon\mgai-pokemon\poke-env\examples\rl_with_new_open_ai_gym_wrapper-softmax.py"
+2022-05-18 23:17:46.768270: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-05-18 23:17:47.602259: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 2783 MB memory:  -> device: 0, name: NVIDIA GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1
+Training for 10000 steps ...
+Interval 1 (0 steps performed)
+C:\Users\Brian\anaconda3\envs\poke\lib\site-packages\keras\engine\training.py:2470: UserWarning: `Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+  warnings.warn('`Model.state_updates` will be removed in a future version. '
+10000/10000 [==============================] - 425s 42ms/step - reward: 0.0104
+done, took 425.063 seconds
+Results against random player:
+DQN Evaluation: 96 victories out of 100 episodes
+Results against max base power player:
+DQN Evaluation: 68 victories out of 100 episodes
+Evaluation with included method: (12.38352876923077, (9.167351245077757, 17.118935266523664))
+Cross evaluation of DQN with baselines:
+------------------  ----------------  --------------  ------------------  ------------------
+-                   SimpleRLPlayer 3  RandomPlayer 5  MaxBasePowerPlay 3  SimpleHeuristics 2
+SimpleRLPlayer 3                      0.96            0.66                0.16
+RandomPlayer 5      0.04                              0.18                0.0
+MaxBasePowerPlay 3  0.34              0.82                                0.04
+SimpleHeuristics 2  0.84              1.0             0.96
+------------------  ----------------  --------------  ------------------  ------------------
