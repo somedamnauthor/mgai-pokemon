@@ -35,19 +35,8 @@ class MaxDamagePlayer(Player):
 
     def choose_move(self, battle):
 
-        #Adding this for more observable battles!!
-        # time.sleep(10)
-
-        # print("Pokemon Class:",battle.POKEMON_CLASS)
-        # print("\nActive Pokemon:",battle.active_pokemon)
-
         # If the player can attack, it will
         if battle.available_moves:
-
-            # #Print Moves
-            # print("Available Moves:")
-            # for move in battle.available_moves:
-            #     print(move," | BP:", move.base_power)
 
             # Finds the best move among available ones
             best_move = max(battle.available_moves, key=lambda move: move.base_power)
@@ -65,7 +54,7 @@ class TypeMatchupPlayer(Player):
     def choose_move(self, battle):
 
         #Adding this for more observable battles
-        # time.sleep(10)
+        # time.sleep(5)
 
         # print("Pokemon Class:",battle.POKEMON_CLASS)
         print("\nPlayer's Active Pokemon:", battle.active_pokemon)
@@ -220,8 +209,7 @@ async def main():
 
     # Now, let's evaluate our player
     await typeMatchupPlayer.battle_against(max_damage_player, n_battles=100)
-    print(
-        "\nAggressive Player won %d / 100 battles [this took %f seconds]"
+    print("\nType Matchup Player won %d / 100 battles [this took %f seconds]"
         % (typeMatchupPlayer.n_won_battles, time.time() - start)
     )
 
