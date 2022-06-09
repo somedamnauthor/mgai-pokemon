@@ -56,7 +56,6 @@ class TypeMatchupPlayer(Player):
         #Adding this for more observable battles
         # time.sleep(5)
 
-        # print("Pokemon Class:",battle.POKEMON_CLASS)
         print("\nPlayer's Active Pokemon:", battle.active_pokemon)
         print("Opponent's Active Pokemon", battle.opponent_active_pokemon)
 
@@ -137,14 +136,6 @@ class TypeMatchupPlayer(Player):
                 #                 print("Pokemon with viable move type found. Making switch")
                 #                 potential_viable = True
                 #                 return self.create_order(possible_pokemon)
-                
-                # except:
-                #     pass
-
-                    # #If that Pokemon is viable, make the switch
-                    # if potential_viable:
-                    #     best_move = possible_pokemon
-                    #     return self.create_order(best_move)
 
             try:
                 if not potential_viable:
