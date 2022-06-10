@@ -12,5 +12,5 @@ Setup:
 
 Execution:
 ==========
-- Run RL variant using 'python3 <filename>' 
+- Run RL variant using 'python3 filename' 
 - The RL variants are named 'rl_trained_with_randomBot', 'rl_trained_with_maxDamageBot' and 'rl_trained_with_scriptedBot'
